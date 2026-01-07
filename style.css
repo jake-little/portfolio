@@ -1,0 +1,220 @@
+/* Header layout */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    background-color: #89acee;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Logo text */
+.logo {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Navigation list */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+/* Remove underline + add styling */
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: #0e5ec7;
+}
+
+/* Circle image from before */
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;  /* vertical center for both columns */
+}
+
+.home {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;  /* 👈 stack vertically */
+    align-items: center;       /* centers image vertically */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Right text column */
+.rightHome {
+    flex: 2;
+    font-size: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;   /* stack items vertically */
+    align-items: center;      /* center horizontally */
+    text-align: center;       /* center text inside */
+    gap: 10px;                /* space between image and header */
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.email-img {
+    width: 52px;
+    height: auto;   /* keeps aspect ratio */
+}
+
+.linkedIn-img {
+    width: 60px;
+    height: auto;   /* keeps aspect ratio */
+}
+
+.CHROME-img {
+    width: 80px;
+    height: auto;   /* keeps aspect ratio */
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;       /* vertical */
+    gap: 10px;       /* space between links */
+    flex-wrap: wrap;  /* optional: wraps if screen is too small */
+}
+
+#projects {
+    padding: 10px 10px;
+    background-color: #f5f5f5; /* optional */
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;  /* stack items vertically */
+    align-items: center;     /* center cards horizontally */
+    gap: 30px;               /* space between cards */
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 1000px;
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    margin-bottom: 15px;      /* spacing below image */
+}
+
+.project-card img {
+    width: auto;               /* adjust size */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.project-card h3 {
+    margin: 15px 0 10px;
+    text-align: center;  /* centers just the heading */
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #b4dbf7cb;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-card a:hover {
+    background-color: #005fa3;
+}
+
+
+#publications {
+    padding: 10px 10px;
+    background-color: #ffffff; /* optional */
+    text-align: center;
+}
+
+.publications-container {
+    display: flex;
+    flex-direction: column;  /* stack items vertically */
+    align-items: center;     /* center cards horizontally */
+    gap: 10px;               /* space between cards */
+    margin-top: 10px;
+}
+
+.publications-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 1000px;
+    padding: 20px;
+    text-align: center;
+}
+
+.publications-card img {
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.publications-card h3 {
+    margin: 15px 0 10px;
+}
+
+.publications-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #b4dbf7cb;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.publications-card a:hover {
+    background-color: #005fa3;
+}
+
+.responsive-video {
+    width: auto;       /* fills container */
+    height: 300px;      /* maintains aspect ratio */
+    border-radius: 8px; /* optional styling */
+}
