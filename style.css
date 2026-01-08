@@ -137,8 +137,8 @@ body {
 .img-wrapper {
     display: flex;
     justify-content: center;  /* horizontal centering */
-    margin-bottom: 15px;      /* spacing below image */
-    padding: 20px;
+    margin-bottom: 5px;      /* spacing below image */
+    padding: 5px;
 }
 
 .project-card img {
