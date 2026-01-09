@@ -5,7 +5,7 @@ header {
     align-items: center;
     padding: 15px 15px;
     background-color: #89acee;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 5px solid #ccc;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 .logo {
     margin: 0;
     font-size: 28px;
-    margin-left: 80px;    /* pushes logo right */
+    margin-left: 150px; 
 }
 
 /* Navigation list */
@@ -26,9 +26,9 @@ body {
     padding: 0;
     display: flex;
     gap: 10px;
+    padding-right: 100px;
 }
 
-/* Remove underline + add styling */
 .nav-links a {
     text-decoration: none;
     color: #000000;
@@ -55,29 +55,32 @@ body {
     display: flex;
     gap: 20px;
     padding: 20px;
-    align-items: center;  /* vertical center for both columns */
+    align-items: center;  
 }
 
 .home {
     flex: 0.5;
     display: flex;
-    flex-direction: column;  /* 👈 stack vertically */
-    align-items: center;       /* centers image vertically */
+    flex-direction: column;  
+    align-items: center;       
     gap: 10px;
+    padding-left: 100px;
 }
 
 /* Right text column */
 .rightHome {
     flex: 2;
     font-size: 20px;
+    padding-right: 100px;
+    padding-left: 50px;
 }
 
 .profile {
     display: flex;
-    flex-direction: column;   /* stack items vertically */
-    align-items: center;      /* center horizontally */
-    text-align: center;       /* center text inside */
-    gap: 10px;                /* space between image and header */
+    flex-direction: column;   
+    align-items: center;    
+    text-align: center;    
+    gap: 10px;                
 }
 
 .circle {
@@ -89,38 +92,38 @@ body {
 
 .email-img {
     width: 52px;
-    height: auto;   /* keeps aspect ratio */
+    height: auto; 
 }
 
 .linkedIn-img {
     width: 60px;
-    height: auto;   /* keeps aspect ratio */
+    height: auto;  
 }
 
 .CHROME-img {
     width: 80px;
-    height: auto;   /* keeps aspect ratio */
+    height: auto;   
 }
 
 .links {
     display: flex;
     justify-content: center;
-    align-items: center;       /* vertical */
-    gap: 20px;       /* space between links */
-    flex-wrap: wrap;  /* optional: wraps if screen is too small */
+    align-items: center;      
+    gap: 20px;      
+    flex-wrap: wrap;  
 }
 
 #projects {
     padding: 10px 10px;
-    background-color: #f5f5f5; /* optional */
+    background-color: #e2e2e2;
     text-align: center;
 }
 
 .projects-container {
     display: flex;
-    flex-direction: column;  /* stack items vertically */
-    align-items: center;     /* center cards horizontally */
-    gap: 30px;               /* space between cards */
+    flex-direction: column; 
+    align-items: center;     
+    gap: 30px;        
     margin-top: 40px;
 }
 
@@ -136,22 +139,23 @@ body {
 
 .img-wrapper {
     display: flex;
-    justify-content: center;  /* horizontal centering */
-    margin-bottom: 5px;      /* spacing below image */
+    justify-content: center; 
+    margin-bottom: 5px;     
     padding: 5px;
+    border-radius: 8px;
 }
 
 .project-card img {
-    width: auto;               /* adjust size */
+    width: auto;             
     height: 300px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 50px;
     padding: 20px;
 }
 
 .project-card h3 {
     margin: 15px 0 10px;
-    text-align: center;  /* centers just the heading */
+    text-align: center; 
 }
 
 .project-card a {
@@ -171,20 +175,20 @@ body {
 
 #publications {
     padding: 10px 10px;
-    background-color: #ffffff; /* optional */
+    background-color: #ffffff; 
     text-align: center;
 }
 
 .publications-container {
     display: flex;
-    flex-direction: column;  /* stack items vertically */
-    align-items: center;     /* center cards horizontally */
-    gap: 10px;               /* space between cards */
+    flex-direction: column;  
+    align-items: center;    
+    gap: 10px;     
     margin-top: 10px;
 }
 
 .publications-card {
-    background-color: #f5f5f5;
+    background-color: #e2e2e2;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     width: 1000px;
@@ -197,7 +201,7 @@ body {
     width: auto;
     height: 300px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 50px;
     padding: 20px;
 }
 
@@ -205,10 +209,26 @@ body {
     margin: 15px 0 10px;
     text-align: center;
 }
+.publications-card h3 {
+    margin: 15px 0 10px;
+    text-align: left;
+}
 
 .publications-card a {
     display: inline-block;
-    margin: 10px;
+    margin: 0px;
+    padding: 8px 15px;
+    background-color: #b4dbf7cb;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.publications-card a.paper-link {
+    display: block;
+    text-align: center;
+    margin: 0px;
     padding: 8px 15px;
     background-color: #b4dbf7cb;
     color: rgb(0, 0, 0);
@@ -223,11 +243,15 @@ body {
 
 .publications-card p {
     text-align: left;
-    margin-top: 10px;  /* optional spacing */
+    margin-top: 10px; 
 }
 
 .responsive-video {
-    width: auto;       /* fills container */
-    height: 300px;      /* maintains aspect ratio */
-    border-radius: 8px; /* optional styling */
+    width: auto;       
+    height: 300px;      
+    border-radius: 8px; 
+}
+
+.no-radius {
+    border-radius: 0;
 }
