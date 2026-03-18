@@ -255,3 +255,9 @@ body {
 .no-radius {
     border-radius: 0;
 }
+
+.video-container {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+}
